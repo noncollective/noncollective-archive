@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,85 +6,169 @@
   <title>The Noncollective Archives</title>
   <style>
     body {
-      font-family: 'Courier New', monospace;
+      font-family: 'Courier New';
       background-color: #fff;
-      color: #006666;
-      max-width: 640px;
+      color: #000;
+      max-width: 600px;
       margin: 2rem auto;
       padding: 0 1rem;
-      font-size: 0.6rem;
+      font-size: 0.4rem;
+      font-weight: normal;
     }
-
     h1 {
-      font-size: 1.5rem;
+      font-size: 0.75rem;
       text-align: left;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid #ccc;
-      font-weight: bold;
+      width: 100%;
+      font-weight: normal;
     }
-
     .track {
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       transition: color 0.2s ease-in-out;
     }
-
     .track-title a {
-      font-weight: bold;
+      font-size: 0.75rem;
+      position: relative;
       text-decoration: none;
       color: inherit;
-      position: relative;
     }
-
     .track-title a::after {
       content: "";
       position: absolute;
       width: 100%;
       height: 1px;
       bottom: 0;
-      left: 0;
+      right: 0;
       background-color: currentColor;
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.3s ease-in-out;
     }
-
     .track-title a:hover::after {
       transform: scaleX(1);
     }
-
-    .track:hover {
-      color: #cc0033;
-    }
-
+    .artist-name,
     .track-date {
-      font-size: 0.4rem;
-      margin-top: 0.25rem;
+      font-size: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s ease-in-out;
     }
+
+    .title-color-1  { color: red; }
+    .title-color-2  { color: blue; }
+    .title-color-3  { color: green; }
+    .title-color-4  { color: darkmagenta; }
+    .title-color-5  { color: darkorange; }
+    .title-color-6  { color: teal; }
+    .title-color-7  { color: olive; }
+    .title-color-8  { color: maroon; }
+    .title-color-9  { color: navy; }
+    .title-color-10 { color: fuchsia; }
+    .title-color-11 { color: seagreen; }
+    .title-color-12 { color: mediumvioletred; }
+    .title-color-13 { color: coral; }
+    .title-color-14 { color: firebrick; }
+    .title-color-15 { color: dodgerblue; }
+    .title-color-16 { color: forestgreen; }
+    .title-color-17 { color: indigo; }
+    .title-color-18 { color: goldenrod; }
+    .title-color-19 { color: mediumseagreen; }
+    .title-color-20 { color: peru; }
+    .title-color-21 { color: tomato; }
+    .title-color-22 { color: slateblue; }
+    .title-color-23 { color: deeppink; }
+    .title-color-24 { color: darkcyan; }
+
+    .title-color-1:hover  { color: mediumseagreen; }
+    .title-color-2:hover  { color: coral; }
+    .title-color-3:hover  { color: deeppink; }
+    .title-color-4:hover  { color: dodgerblue; }
+    .title-color-5:hover  { color: firebrick; }
+    .title-color-6:hover  { color: peru; }
+    .title-color-7:hover  { color: goldenrod; }
+    .title-color-8:hover  { color: forestgreen; }
+    .title-color-9:hover  { color: darkcyan; }
+    .title-color-10:hover { color: slateblue; }
+    .title-color-11:hover { color: indigo; }
+    .title-color-12:hover { color: tomato; }
+    .title-color-13:hover { color: green; }
+    .title-color-14:hover { color: olive; }
+    .title-color-15:hover { color: red; }
+    .title-color-16:hover { color: navy; }
+    .title-color-17:hover { color: fuchsia; }
+    .title-color-18:hover { color: blue; }
+    .title-color-19:hover { color: darkorange; }
+    .title-color-20:hover { color: teal; }
+    .title-color-21:hover { color: seagreen; }
+    .title-color-22:hover { color: maroon; }
+    .title-color-23:hover { color: darkmagenta; }
+    .title-color-24:hover { color: mediumvioletred; }
 
     footer {
-      text-align: center;
-      font-size: 0.5rem;
+      text-align: left;
+      font-size: 0.7rem;
       color: #666;
       margin-top: 4rem;
+      width: 100%;
+      font-weight: normal;
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
     }
   </style>
 </head>
 <body>
   <h1>The Noncollective Archives</h1>
-
   <div class="track-list">
-    <div class="track">
-      <div class="track-title">
-        <span class="artist-name">Speculator —</span>
-        <a href="#">Live at Disco Not Disco</a>
-      </div>
-      <div class="track-date">September 24, 2025</div>
-    </div>
+    <div class="track title-color-1"><div class="track-title"><span class="artist-name">Speculator —</span> <a href="#">Live at Disco Not Disco (Belgrade, Serbia)</a></div><div class="track-date">September 24, 2025</div></div>
   </div>
 
   <footer>
-    &copy; 2025 The Noncollective. All rights reserved.
+    &copy; 2025 The Noncollective. All rights reserved.<br>
+    This is a curated archive of recordings. For inquiries or submissions, contact <a href="mailto:info@noncollective.org">info@noncollective.org</a>.
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const allTracks = document.querySelectorAll('.track-list .track a');
+      allTracks.forEach(function (track) {
+        track.addEventListener('click', function (e) {
+          e.preventDefault();
+          const title = track.textContent.trim();
+          const playerWindow = window.open('', 'popupPlayer', 'width=400,height=120');
+          playerWindow.document.write(`
+            <html>
+              <head>
+                <title>Now Playing</title>
+                <style>
+                  body {
+                    margin: 0;
+                    padding: 1rem;
+                    font-family: 'Courier New';
+                    background: #fff;
+                    color: #000;
+                    font-size: 0.75rem;
+                  }
+                  audio {
+                    width: 100%;
+                    margin-top: 0.5rem;
+                  }
+                </style>
+              </head>
+              <body>
+                <div><strong>Now Playing:</strong><br>${title}</div>
+                <audio controls autoplay>
+                  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </body>
+            </html>
+          `);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

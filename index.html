@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Noncollective Archives</title>
+  <style>
+    body {
+      font-family: 'Courier New';
+      background-color: #fff;
+      color: #000;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-size: 0.4rem;
+      font-weight: normal;
+    }
+    h1 {
+      font-size: 0.75rem;
+      text-align: left;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      font-weight: normal;
+    }
+    .track {
+      margin-bottom: 0.75rem;
+      transition: color 0.2s ease-in-out;
+    }
+    .track-title a {
+      font-size: 0.75rem;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+    }
+    .track-title a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: 0;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+    .track-title a:hover::after {
+      transform: scaleX(1);
+    }
+    .artist-name,
+    .track-date {
+      font-size: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .title-color-1  { color: red; }
+    .title-color-2  { color: blue; }
+    .title-color-3  { color: green; }
+    .title-color-4  { color: darkmagenta; }
+    .title-color-5  { color: darkorange; }
+    .title-color-6  { color: teal; }
+    .title-color-7  { color: olive; }
+    .title-color-8  { color: maroon; }
+    .title-color-9  { color: navy; }
+    .title-color-10 { color: fuchsia; }
+    .title-color-11 { color: seagreen; }
+    .title-color-12 { color: mediumvioletred; }
+    .title-color-13 { color: coral; }
+    .title-color-14 { color: firebrick; }
+    .title-color-15 { color: dodgerblue; }
+    .title-color-16 { color: forestgreen; }
+    .title-color-17 { color: indigo; }
+    .title-color-18 { color: goldenrod; }
+    .title-color-19 { color: mediumseagreen; }
+    .title-color-20 { color: peru; }
+    .title-color-21 { color: tomato; }
+    .title-color-22 { color: slateblue; }
+    .title-color-23 { color: deeppink; }
+    .title-color-24 { color: darkcyan; }
+
+    .title-color-1:hover  { color: mediumseagreen; }
+    .title-color-2:hover  { color: coral; }
+    .title-color-3:hover  { color: deeppink; }
+    .title-color-4:hover  { color: dodgerblue; }
+    .title-color-5:hover  { color: firebrick; }
+    .title-color-6:hover  { color: peru; }
+    .title-color-7:hover  { color: goldenrod; }
+    .title-color-8:hover  { color: forestgreen; }
+    .title-color-9:hover  { color: darkcyan; }
+    .title-color-10:hover { color: slateblue; }
+    .title-color-11:hover { color: indigo; }
+    .title-color-12:hover { color: tomato; }
+    .title-color-13:hover { color: green; }
+    .title-color-14:hover { color: olive; }
+    .title-color-15:hover { color: red; }
+    .title-color-16:hover { color: navy; }
+    .title-color-17:hover { color: fuchsia; }
+    .title-color-18:hover { color: blue; }
+    .title-color-19:hover { color: darkorange; }
+    .title-color-20:hover { color: teal; }
+    .title-color-21:hover { color: seagreen; }
+    .title-color-22:hover { color: maroon; }
+    .title-color-23:hover { color: darkmagenta; }
+    .title-color-24:hover { color: mediumvioletred; }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2rem 0;
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #666;
+      margin-top: 4rem;
+      width: 100%;
+      font-weight: normal;
+    }
+  @media (max-width: 480px) {
+  .track {
+    padding: 0.5rem 0;
+  }
+  .track-title a {
+    word-break: break-word;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+  <h1>The Noncollective Archives</h1>
+  <div class="track-list">
+    <div class="track title-color-1"><div class="track-title"><span class="artist-name">Speculator —</span> <a href="#">Live at Disco Not Disco (Belgrade, Serbia)</a></div><div class="track-date">September 24, 2025</div></div>
+    <div class="track title-color-2"><div class="track-title"><span class="artist-name">Phuong-Dan —</span> <a href="#">Night Came Early In My Day (Part 2)</a></div><div class="track-date">September 23, 2025</div></div>
+    <div class="track title-color-3"><div class="track-title"><span class="artist-name">Alexis Le-Tan —</span> <a href="#">Indians Do It Better</a></div><div class="track-date">September 22, 2025</div></div>
+    <div class="track title-color-4"><div class="track-title"><span class="artist-name">Zeroy —</span> <a href="#">Mix Pickle</a></div><div class="track-date">September 21, 2025</div></div>
+    <div class="track title-color-5"><div class="track-title"><span class="artist-name">Thriftcotheque —</span> <a href="#">Disco Cult Of The Injured Dancer</a></div><div class="track-date">September 20, 2025</div></div>
+    <div class="track title-color-6"><div class="track-title"><span class="artist-name">Saveljev —</span> <a href="#">Szláv Bojs</a></div><div class="track-date">September 19, 2025</div></div>
+    <div class="track title-color-7"><div class="track-title"><span class="artist-name">Basso —</span> <a href="#">Thing From The Woods</a></div><div class="track-date">September 18, 2025</div></div>
+    <div class="track title-color-8"><div class="track-title"><span class="artist-name">Alexis Le-Fan —</span> <a href="#">After Winter</a></div><div class="track-date">September 17, 2025</div></div>
+    <div class="track title-color-9"><div class="track-title"><span class="artist-name">Allo Rodolphe —</span> <a href="#">What's My Name (again)?</a></div><div class="track-date">September 16, 2025</div></div>
+    <div class="track title-color-10"><div class="track-title"><span class="artist-name">Roman Wafers —</span> <a href="#">Chillin at Club Bamboo Musik</a></div><div class="track-date">September 15, 2025</div></div>
+    <div class="track title-color-11"><div class="track-title"><span class="artist-name">Lovefingers —</span> <a href="#">Live at P.S.1 Warm-Up 2009 / Modcast #43</a></div><div class="track-date">September 14, 2025</div></div>
+    <div class="track title-color-12"><div class="track-title"><span class="artist-name">Kid Inquisitive —</span> <a href="#">In The Cool Heat Of The Night</a></div><div class="track-date">September 13, 2025</div></div>
+    <div class="track title-color-13"><div class="track-title"><span class="artist-name">The Stallions —</span> <a href="#">Live on Beats In Space (Part 2)</a></div><div class="track-date">September 12, 2025</div></div>
+    <div class="track title-color-14"><div class="track-title"><span class="artist-name">Lovefingers —</span> <a href="#">Jaspar's Lullabies on Beats In Space (Part 1)</a></div><div class="track-date">September 11, 2025</div></div>
+    <div class="track title-color-15"><div class="track-title"><span class="artist-name">Charles Bals —</span> <a href="#">Beach Freaks Don't Like Secrets (Part 1)</a></div><div class="track-date">September 10, 2025</div></div>
+    <div class="track title-color-16"><div class="track-title"><span class="artist-name">Fumi Sato —</span> <a href="#">Wheeeeddxxx Mix</a></div><div class="track-date">September 9, 2025</div></div>
+    <div class="track title-color-17"><div class="track-title"><span class="artist-name">Justin Vandervolgen —</span> <a href="#">Yeah Man</a></div><div class="track-date">September 8, 2025</div></div>
+    <div class="track title-color-18"><div class="track-title"><span class="artist-name">Secret Circuit DJ —</span> <a href="#">Deepspace Motherfuckers</a></div><div class="track-date">September 7, 2025</div></div>
+    <div class="track title-color-19"><div class="track-title"><span class="artist-name">Slobodan aka DJ BRKA —</span> <a href="#">East Of Cosmic (Part 3)</a></div><div class="track-date">September 6, 2025</div></div>
+    <div class="track title-color-20"><div class="track-title"><span class="artist-name">Nitedog & Lovefingers —</span> <a href="#">Poolside Pleasures (Live in Palm Springs)</a></div><div class="track-date">September 5, 2025</div></div>
+    <div class="track title-color-21"><div class="track-title"><span class="artist-name">Lovefingers —</span> <a href="#">Storytelling (Mix for Oki-Ni Japan)</a></div><div class="track-date">September 4, 2025</div></div>
+    <div class="track title-color-22"><div class="track-title"><span class="artist-name">Lovefingers —</span> <a href="#">FACT Mix 82 & Interview</a></div><div class="track-date">September 3, 2025</div></div>
+    <div class="track title-color-23"><div class="track-title"><span class="artist-name">Albion —</span> <a href="#">Mixtura 7</a></div><div class="track-date">September 2, 2025</div></div>
+    <div class="track title-color-24"><div class="track-title"><span class="artist-name">Dick Cheese & Roman Wafers (PAM) —</span> <a href="#">The Future Of Dance</a></div><div class="track-date">September 1, 2025</div></div>
+  </div>
+<footer style="text-align: left; border-top: 1px solid #ccc; padding-top: 1rem;">
+  &copy; 2025 The Noncollective. All rights reserved.<br>
+  This is a curated archive of recordings. For inquiries or submissions, contact <a href="mailto:info@noncollective.org">info@noncollective.org</a>.
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const allTracks = document.querySelectorAll('.track-list .track a');
+    allTracks.forEach(function (track) {
+      track.addEventListener('click', function (e) {
+        e.preventDefault();
+        const title = track.textContent.trim();
+        const playerWindow = window.open('', 'popupPlayer', 'width=400,height=120');
+        playerWindow.document.write(`
+          <html>
+            <head>
+              <title>Now Playing</title>
+              <style>
+                body {
+                  margin: 0;
+                  padding: 1rem;
+                  font-family: 'Courier New';
+                  background: #fff;
+                  color: #000;
+                  font-size: 0.75rem;
+                }
+                audio {
+                  width: 100%;
+                  margin-top: 0.5rem;
+                }
+              </style>
+            </head>
+            <body>
+              <div><strong>Now Playing:</strong><br>${title}</div>
+              <audio controls autoplay>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </body>
+          </html>
+        `);
+      });
+    });
+  });
+</script>
+</body>
+</html>
